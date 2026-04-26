@@ -457,6 +457,210 @@
             margin-right: 6px;
         }
 
+        .mobile-summary-view { display: none; }
+        .receipt-export-pane {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+        .summary-total-card {
+            background: var(--ink-1);
+            color: #fff;
+            border-radius: var(--r-lg);
+            padding: 18px;
+            box-shadow: var(--shadow-md);
+        }
+        .summary-total-label {
+            font-size: 0.72rem;
+            color: rgba(255,255,255,0.6);
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+        .summary-total-amount {
+            font-family: var(--font-mono);
+            font-size: 1.75rem;
+            font-weight: 600;
+            line-height: 1.1;
+        }
+        .summary-stat-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin-top: 14px;
+        }
+        .summary-stat {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: var(--r-md);
+            padding: 10px;
+        }
+        .summary-stat-value {
+            font-family: var(--font-mono);
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        .summary-stat-label {
+            color: rgba(255,255,255,0.55);
+            font-size: 0.7rem;
+        }
+        .summary-mobile-section {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--r-lg);
+            padding: 16px;
+            box-shadow: var(--shadow-sm);
+        }
+        .summary-mobile-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+        .summary-mobile-title h3 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--ink-1);
+            margin: 0;
+        }
+        .summary-mobile-title span {
+            font-size: 0.72rem;
+            color: var(--ink-3);
+        }
+        .settlement-list,
+        .person-summary-list,
+        .shop-summary-list {
+            display: grid;
+            gap: 10px;
+        }
+        .settlement-card {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: center;
+            gap: 12px;
+            border: 1px solid var(--border);
+            border-radius: var(--r-md);
+            padding: 12px;
+            background: var(--surface-2);
+        }
+        .settlement-route {
+            color: var(--ink-1);
+            font-weight: 600;
+            line-height: 1.35;
+        }
+        .settlement-route small {
+            display: block;
+            color: var(--ink-3);
+            font-size: 0.72rem;
+            font-weight: 500;
+            margin-top: 2px;
+        }
+        .settlement-amount {
+            font-family: var(--font-mono);
+            color: var(--danger);
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        .summary-empty-state {
+            border: 1px dashed var(--border);
+            border-radius: var(--r-md);
+            color: var(--ink-3);
+            padding: 16px;
+            text-align: center;
+            font-size: 0.85rem;
+            background: var(--surface-2);
+        }
+        .person-summary-card,
+        .shop-summary-card {
+            border: 1px solid var(--border);
+            border-radius: var(--r-md);
+            padding: 12px;
+            background: var(--surface);
+        }
+        .person-summary-top,
+        .shop-summary-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+        .person-summary-name,
+        .shop-summary-name {
+            color: var(--ink-1);
+            font-weight: 600;
+        }
+        .person-summary-net,
+        .shop-summary-total {
+            font-family: var(--font-mono);
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        .person-summary-net.is-receive { color: var(--ok); }
+        .person-summary-net.is-pay { color: var(--danger); }
+        .person-summary-meta {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+        .person-summary-meta div {
+            background: var(--surface-2);
+            border-radius: var(--r-sm);
+            padding: 8px;
+            font-size: 0.78rem;
+            color: var(--ink-2);
+        }
+        .person-summary-meta strong {
+            display: block;
+            color: var(--ink-1);
+            font-family: var(--font-mono);
+            font-size: 0.88rem;
+            margin-top: 2px;
+        }
+        .shop-summary-items {
+            display: grid;
+            gap: 8px;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px dashed var(--border);
+        }
+        .shop-summary-item {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            color: var(--ink-2);
+            font-size: 0.82rem;
+        }
+        .shop-summary-item span:last-child {
+            font-family: var(--font-mono);
+            color: var(--ink-1);
+            white-space: nowrap;
+        }
+        .payment-mobile-card {
+            display: grid;
+            gap: 12px;
+        }
+        .payment-mobile-qr {
+            width: 180px;
+            max-width: 100%;
+            border-radius: var(--r-md);
+            border: 1px solid var(--border);
+            background: #fff;
+            padding: 8px;
+            justify-self: center;
+        }
+        .payment-mobile-detail {
+            background: var(--surface-2);
+            border-radius: var(--r-md);
+            padding: 12px;
+            text-align: center;
+            color: var(--ink-1);
+            font-weight: 600;
+            word-break: break-word;
+        }
+
         /* ── Toast ── */
         .toast-container { position: fixed; bottom: 32px; left: 50%; transform: translateX(-50%); z-index: 2000; }
         #liveToast {
@@ -695,6 +899,21 @@
             }
             .summary-modal-body {
                 padding: 12px !important;
+                display: block !important;
+                background: var(--bg) !important;
+            }
+            .mobile-summary-view {
+                display: grid;
+                gap: 12px;
+                width: 100%;
+                padding-bottom: 24px;
+            }
+            .receipt-export-pane {
+                position: absolute;
+                left: -100000px;
+                top: 0;
+                width: 1200px;
+                pointer-events: none;
             }
             .receipt-container {
                 min-width: 1080px;
@@ -1068,6 +1287,7 @@
                             </button>
                         </div>
                     </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1195,6 +1415,105 @@
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body summary-modal-body d-flex bg-secondary overflow-auto p-4" style="align-items:flex-start;justify-content:flex-start"> 
+                    <div class="mobile-summary-view">
+                        <div class="summary-total-card">
+                            <div class="summary-total-label">Grand Total</div>
+                            <div class="summary-total-amount">{{ formatCurrency(totalTripPrice) }}</div>
+                            <div class="summary-stat-grid">
+                                <div class="summary-stat">
+                                    <div class="summary-stat-value">{{ people.length }}</div>
+                                    <div class="summary-stat-label">คน</div>
+                                </div>
+                                <div class="summary-stat">
+                                    <div class="summary-stat-value">{{ groupedExpenses.length }}</div>
+                                    <div class="summary-stat-label">ร้าน</div>
+                                </div>
+                                <div class="summary-stat">
+                                    <div class="summary-stat-value">{{ expenses.length }}</div>
+                                    <div class="summary-stat-label">รายการ</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <section class="summary-mobile-section">
+                            <div class="summary-mobile-title">
+                                <h3><i class="fa-solid fa-right-left me-1"></i>ต้องโอนให้ใคร</h3>
+                                <span>{{ settlements.length }} รายการ</span>
+                            </div>
+                            <div v-if="settlements.length > 0" class="settlement-list">
+                                <div v-for="s in settlements" :key="s.from + '-' + s.to + '-' + s.amount" class="settlement-card">
+                                    <div class="settlement-route">
+                                        {{ s.from }} <i class="fa-solid fa-arrow-right mx-1" style="color:var(--ink-3)"></i> {{ s.to }}
+                                        <small>โอนเพื่อเคลียร์ยอดสุทธิ</small>
+                                    </div>
+                                    <div class="settlement-amount">{{ formatNumber(s.amount) }}</div>
+                                </div>
+                            </div>
+                            <div v-else class="summary-empty-state">
+                                ยอดทุกคนสมดุลแล้ว ไม่ต้องโอนเพิ่ม
+                            </div>
+                        </section>
+
+                        <section class="summary-mobile-section">
+                            <div class="summary-mobile-title">
+                                <h3><i class="fa-solid fa-users me-1"></i>สรุปรายคน</h3>
+                                <span>{{ summary.length }} คน</span>
+                            </div>
+                            <div class="person-summary-list">
+                                <div v-for="p in summary" :key="p.name" class="person-summary-card">
+                                    <div class="person-summary-top">
+                                        <div class="person-summary-name">{{ p.name }}</div>
+                                        <div class="person-summary-net" :class="p.net >= 0 ? 'is-receive' : 'is-pay'">
+                                            {{ p.net > 0 ? '+' : p.net < 0 ? '-' : '' }}{{ formatNumber(Math.abs(p.net)) }}
+                                        </div>
+                                    </div>
+                                    <div class="person-summary-meta">
+                                        <div>จ่ายก่อน<strong>{{ formatNumber(p.paid) }}</strong></div>
+                                        <div>กิน/ใช้ไป<strong>{{ formatNumber(p.consumed) }}</strong></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="summary-mobile-section">
+                            <div class="summary-mobile-title">
+                                <h3><i class="fa-solid fa-store me-1"></i>ตามร้าน</h3>
+                                <span>{{ groupedExpenses.length }} ร้าน</span>
+                            </div>
+                            <div class="shop-summary-list">
+                                <details v-for="group in groupedExpenses" :key="group.name" class="shop-summary-card">
+                                    <summary class="shop-summary-top">
+                                        <span class="shop-summary-name">{{ group.name }}</span>
+                                        <span class="shop-summary-total">{{ formatNumber(group.total) }}</span>
+                                    </summary>
+                                    <div class="shop-summary-items">
+                                        <div v-for="ex in group.items" :key="ex.id" class="shop-summary-item">
+                                            <span>{{ ex.item }}</span>
+                                            <span>{{ formatNumber(ex.price) }}</span>
+                                        </div>
+                                    </div>
+                                </details>
+                            </div>
+                        </section>
+
+                        <section class="summary-mobile-section">
+                            <div class="summary-mobile-title">
+                                <h3><i class="fa-solid fa-qrcode me-1"></i>ช่องทางรับเงิน</h3>
+                                <span>{{ payment.type === 'qrcode' ? 'QR' : payment.type === 'promptpay' ? 'PromptPay' : 'Bank' }}</span>
+                            </div>
+                            <div class="payment-mobile-card">
+                                <img v-if="payment.type === 'qrcode' && payment.qrImage" :src="payment.qrImage" class="payment-mobile-qr" alt="QR Code">
+                                <div v-else-if="payment.detail || payment.bankName || payment.name" class="payment-mobile-detail">
+                                    <div v-if="payment.bankName">{{ payment.bankName }}</div>
+                                    <div v-if="payment.detail">{{ payment.detail }}</div>
+                                    <div v-if="payment.name">{{ payment.name }}</div>
+                                </div>
+                                <div v-else class="summary-empty-state">ยังไม่ได้ระบุช่องทางรับเงิน</div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="receipt-export-pane">
                     <div id="captureArea" class="receipt-container" :style="{ transform: 'scale(' + zoomLevel + ')', transformOrigin: 'top left', marginBottom: ((zoomLevel - 1) * 100) + '%' }">
                         <div class="receipt-left">
                             <div class="mb-4 pb-3 border-bottom d-flex justify-content-between align-items-end">
@@ -1321,6 +1640,35 @@
                     else { ex.consumers.forEach(c => { if(map[c]) map[c].consumed += (ex.price / ex.consumers.length); }); }
                 });
                 return Object.values(map).map(p => { p.net = Math.round(p.paid - p.consumed); return p; }).sort((a,b) => b.net - a.net);
+            },
+            settlements() {
+                const creditors = this.summary
+                    .filter(p => p.net > 0)
+                    .map(p => ({ name: p.name, amount: p.net }));
+                const debtors = this.summary
+                    .filter(p => p.net < 0)
+                    .map(p => ({ name: p.name, amount: Math.abs(p.net) }));
+                const result = [];
+                let debtorIndex = 0;
+                let creditorIndex = 0;
+
+                while (debtorIndex < debtors.length && creditorIndex < creditors.length) {
+                    const debtor = debtors[debtorIndex];
+                    const creditor = creditors[creditorIndex];
+                    const amount = Math.min(debtor.amount, creditor.amount);
+
+                    if (amount > 0) {
+                        result.push({ from: debtor.name, to: creditor.name, amount });
+                    }
+
+                    debtor.amount -= amount;
+                    creditor.amount -= amount;
+
+                    if (debtor.amount <= 0) debtorIndex++;
+                    if (creditor.amount <= 0) creditorIndex++;
+                }
+
+                return result;
             }
         },
         methods: {
